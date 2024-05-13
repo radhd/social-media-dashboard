@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         custom: {
           100: "#8C98C6",
+          greenText: "#1EB589",
+          redText: "#DC414C",
         },
       },
     },
