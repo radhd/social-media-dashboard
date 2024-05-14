@@ -22,5 +22,5 @@
 }
 
 .card {
-  @apply grid place-items-center space-y-6 border-t-[3px] bg-[#252B42] pb-6 pt-8 text-center;
+  @apply grid cursor-pointer place-items-center space-y-6 border-t-[3px] bg-[#252B42] pb-6 pt-8 text-center tablet:hover:bg-slate-700;
 }

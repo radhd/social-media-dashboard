@@ -13,16 +13,20 @@
     <title>Social Media Dashboard</title>
   </head>
   <body class="inter-400 bg-[#20222F] text-sm text-white">
-    <div class="space-y-4 px-6">
+    <div
+      class="space-y-4 px-6 pb-10 pt-9 tablet:flex tablet:justify-between desktop:px-40 desktop:pb-12"
+    >
       <div>
-        <h2 class="inter-700 text-2xl">Social Media Dashboard</h2>
+        <h2 class="inter-700 text-2xl desktop:text-3xl">
+          Social Media Dashboard
+        </h2>
         <span class="text-custom-100 opacity-80">Total Followers: 23,004</span>
       </div>
-      <div class="border-b-[1px] border-b-[#333A55]"></div>
-      <div class="flex justify-between">
-        <span class="text-custom-100">Dark mode</span>
+      <div class="border-b-[1px] border-b-[#333A55] tablet:border-b-0"></div>
+      <div class="flex justify-between tablet:items-center tablet:gap-3">
+        <span class="text-custom-100 tablet:text-white">Dark mode</span>
         <!-- Toggle Button -->
-        <div class="relative">
+        <div class="relative top-0.5">
           <div>
             <input
               type="checkbox"
@@ -34,7 +38,7 @@
     </div>
     <!-- Cards -->
     <div
-      class="tablet:grid-cols-3 desktop:grid-cols-4 tablet:gap-7 grid gap-6 px-6"
+      class="grid gap-6 px-6 tablet:grid-cols-3 tablet:gap-7 desktop:grid-cols-4 desktop:gap-8 desktop:px-40"
     >
       <!-- Facebook Card -->
       <div class="card border-t-[#178FF5]">
@@ -65,7 +69,7 @@
         </div>
         <div class="flex items-center gap-1">
           <img src="images/icon-up.svg" alt="" />
-          <span class="text-custom-greenText text-[0.75rem]">99 Today</span>
+          <span class="text-[0.75rem] text-custom-greenText">99 Today</span>
         </div>
       </div>
 
@@ -85,7 +89,7 @@
         </div>
         <div class="flex items-center gap-1">
           <img src="images/icon-up.svg" alt="" />
-          <span class="text-custom-greenText text-[0.75rem]">1099 Today</span>
+          <span class="text-[0.75rem] text-custom-greenText">1099 Today</span>
         </div>
       </div>
 
@@ -104,11 +108,26 @@
         </div>
         <div class="flex items-center gap-1">
           <img src="images/icon-down.svg" alt="" />
-          <span class="text-custom-redText text-[0.75rem]">144 Today</span>
+          <span class="text-[0.75rem] text-custom-redText">144 Today</span>
         </div>
       </div>
 
-      <!--  -->
+      <!-- Cards End -->
+
+      <h3>Overview - Today</h3>
+
+      <!-- Overview-Cards -->
+
+      <!-- Overview-Card -->
+      <div class="overview-card">
+        <span>Page Views</span>
+        <span>87</span>
+        <img src="images/icon-facebook.svg" alt="" />
+        <div>
+          <img src="images/icon-up.svg" alt="" />
+          <span>3%</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
