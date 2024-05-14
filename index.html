@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,25 +12,32 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Social Media Dashboard</title>
   </head>
-  <body class="inter-400 bg-[#20222F] text-sm text-white">
+  <body
+    class="inter-400 bg-white text-sm text-black dark:bg-[#20222F] dark:text-white"
+  >
     <div
-      class="space-y-4 px-6 pb-10 pt-9 tablet:flex tablet:justify-between desktop:px-40 desktop:pb-12"
+      class="relative space-y-4 px-6 pb-10 pt-9 tablet:flex tablet:justify-between desktop:px-40 desktop:pb-12"
     >
+      <div
+        class="absolute left-0 top-0 -z-10 h-60 w-full rounded-b-2xl bg-[#F7F9FF] desktop:h-60 dark:bg-[#20222F]"
+      ></div>
       <div>
         <h2 class="inter-700 text-2xl desktop:text-3xl">
           Social Media Dashboard
         </h2>
-        <span class="text-custom-100 opacity-80">Total Followers: 23,004</span>
+        <span class="text-custom-200 opacity-80 dark:text-custom-100"
+          >Total Followers: 23,004</span
+        >
       </div>
       <div class="border-b-[1px] border-b-[#333A55] tablet:border-b-0"></div>
       <div class="flex justify-between tablet:items-center tablet:gap-3">
-        <span class="text-custom-100 tablet:text-white">Dark mode</span>
+        <span class="text-custom-100 tablet:dark:text-white">Dark mode</span>
         <!-- Toggle Button -->
         <div class="relative top-0.5">
           <div>
             <input
               type="checkbox"
-              class="relative inline-block h-[24px] w-[48px] cursor-pointer appearance-none rounded-full bg-gradient-to-bl from-green-500 to-blue-500 shadow-md transition-all after:absolute after:left-[3px] after:top-[3px] after:h-[18px] after:w-[18px] after:rounded-full after:bg-[#252B42] after:shadow-sm after:transition-all after:content-[''] checked:after:translate-x-6 checked:after:bg-[#252B42]"
+              class="relative inline-block h-[24px] w-[48px] cursor-pointer appearance-none rounded-full bg-[#AEB3CB] shadow-md transition-all after:absolute after:left-[3px] after:top-[3px] after:h-[18px] after:w-[18px] after:rounded-full after:bg-[#F1F3FA] after:shadow-sm after:transition-all after:content-[''] checked:bg-gradient-to-bl checked:from-green-500 checked:to-blue-500 checked:after:translate-x-6 checked:after:bg-[#252B42] after:dark:bg-[#252B42]"
             />
           </div>
         </div>
@@ -44,7 +51,9 @@
       <div class="card border-t-[#178FF5]">
         <div class="flex gap-2">
           <img src="images/icon-facebook.svg" alt="" />
-          <span class="text-[0.75rem] text-custom-100">@nathanf</span>
+          <span class="text-[0.75rem] text-custom-200 dark:text-custom-100"
+            >@nathanf</span
+          >
         </div>
         <div>
           <h1 class="inter-700 text-6xl">1987</h1>
@@ -52,7 +61,9 @@
         </div>
         <div class="flex items-center gap-1">
           <img src="images/icon-up.svg" alt="" />
-          <span class="text-[0.75rem] text-[#D8D8D8]">12 Today</span>
+          <span class="text-[0.75rem] text-custom-200 dark:text-[#D8D8D8]"
+            >12 Today</span
+          >
         </div>
       </div>
 
@@ -111,23 +122,135 @@
           <span class="text-[0.75rem] text-custom-redText">144 Today</span>
         </div>
       </div>
-
-      <!-- Cards End -->
-
-      <h3>Overview - Today</h3>
-
-      <!-- Overview-Cards -->
-
-      <!-- Overview-Card -->
-      <div class="overview-card">
-        <span>Page Views</span>
-        <span>87</span>
-        <img src="images/icon-facebook.svg" alt="" />
-        <div>
-          <img src="images/icon-up.svg" alt="" />
-          <span>3%</span>
-        </div>
-      </div>
     </div>
+    <!-- Cards End -->
+
+    <!-- Overview-Cards -->
+    <section class="px-6 pt-12 desktop:px-40">
+      <h3 class="pb-7 text-2xl">Overview - Today</h3>
+      <div class="grid gap-4 tablet:grid-cols-3 desktop:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Page Views</span>
+            <span class="inter-700 row-start-2 text-3xl">87</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-up.svg" alt="" />
+              <span class="text-xs text-custom-greenText">3%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <!-- Card 2 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Likes</span>
+            <span class="inter-700 row-start-2 text-3xl">52</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-down.svg" alt="" />
+              <span class="text-xs text-custom-redText">2%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <!-- Card 3 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Likes</span>
+            <span class="inter-700 row-start-2 text-3xl">5462</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-up.svg" alt="" />
+              <span class="text-xs text-custom-greenText">2257%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <!-- Card 4 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Profile Views</span>
+            <span class="inter-700 row-start-2 text-3xl">52k</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-up.svg" alt="" />
+              <span class="text-xs text-custom-greenText">1375%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <!-- Card 5 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Retweets</span>
+            <span class="inter-700 row-start-2 text-3xl">117</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-up.svg" alt="" />
+              <span class="text-xs text-custom-greenText">303%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <!-- Card 6 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Likes</span>
+            <span class="inter-700 row-start-2 text-3xl">553%</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-up.svg" alt="" />
+              <span class="text-xs text-custom-greenText">2257%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <!-- Card 7 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Likes</span>
+            <span class="inter-700 row-start-2 text-3xl">107</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-down.svg" alt="" />
+              <span class="text-xs text-custom-redText">19%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <!-- Card 8 -->
+        <div class="overview-card">
+          <div class="grid grid-cols-2 grid-rows-2">
+            <span class="text-custom-100">Total Views</span>
+            <span class="inter-700 row-start-2 text-3xl">1407</span>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-end">
+              <img src="images/icon-down.svg" alt="" />
+              <span class="text-xs text-custom-redText">12%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+      </div>
+    </section>
+    <!-- Cards Section End -->
   </body>
 </html>

@@ -22,5 +22,9 @@
 }
 
 .card {
-  @apply grid cursor-pointer place-items-center space-y-6 border-t-[3px] bg-[#252B42] pb-6 pt-8 text-center tablet:hover:bg-slate-700;
+  @apply grid cursor-pointer place-items-center space-y-6 border-t-[3px] bg-[#F1F3FA] pb-6 pt-8 text-center tablet:hover:bg-slate-300 dark:bg-[#252B42] tablet:dark:hover:bg-slate-700;
+}
+
+.overview-card {
+  @apply grid cursor-pointer bg-[#F1F3FA] px-6 pb-6 pt-7 tablet:hover:bg-slate-700 dark:bg-[#252B42];
 }
